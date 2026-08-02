@@ -38,4 +38,8 @@ spec:
               secretKeyRef:
                 name: postgres-secret
                 key: POSTGRES_PASSWORD
-          
+          - name: SECRET_KEY_BASE
+            valueFrom:
+              secretKeyRef:
+                name: postgres-secret
+                key: secret-key-base
