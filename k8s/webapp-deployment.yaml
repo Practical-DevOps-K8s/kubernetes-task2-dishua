@@ -17,7 +17,7 @@ spec:
         image: webapp:latest
         imagePullPolicy: IfNotPresent
         ports:
-          - containerPort: 5000
+          - containerPort: 80
         env:
           - name: DB_HOST
             value: "postgres-service"
